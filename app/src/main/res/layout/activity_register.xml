@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/tvPleaseCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Make Your Account"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/etRegisterUsername"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tvPleaseCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="24dp"/>
+
+    <EditText
+        android:id="@+id/etRegisterName"
+        android:layout_below="@+id/etRegisterUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Your Name"
+        android:drawableStart="@drawable/ic_baseline_account_box_24"
+        android:drawablePadding="24dp"/>
+
+    <EditText
+        android:id="@+id/etRegisterPassword"
+        android:layout_below="@+id/etRegisterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="24dp"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_below="@id/etRegisterPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="REGISTER"/>
+
+    <TextView
+        android:id="@+id/tvLoginHere"
+        android:layout_below="@id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Already Have Account? Login Here"/>
+
+</RelativeLayout>

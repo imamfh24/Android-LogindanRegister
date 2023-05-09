@@ -11,7 +11,7 @@ if($_POST){
     $response = []; //Data Response
 
     //Cek username didalam databse
-    $userQuery = $connection->prepare("SELECT * FROM user where username = ?");
+    $userQuery = $connection->prepare("SELECT * FROM tb_user where username = ?");
     $userQuery->execute(array($username));
     $query = $userQuery->fetch();
 
